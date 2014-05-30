@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# bash_prompt
+
+
+# set a fancy prompt
+GREEN="\[\e[0;32m\]"
+RED="\[\e[0;31m\]"
+PLAIN="\[\e[m\]"
+PS1="${GREEN}[\u] ${RED}\w${PLAIN} $ "
+

@@ -1,0 +1,31 @@
+# bash_paths
+
+PATH=/usr/local/sbin
+PATH=$PATH:/usr/local/bin
+PATH=$PATH:/usr/sbin
+PATH=$PATH:/usr/bin
+PATH=$PATH:/sbin
+PATH=$PATH:/bin
+export PATH
+
+# PROGRAM SPECIFIC PATHS
+NETCDF="/usr/local/"
+FC="/usr/local/bin/gfortran"
+F90="/usr/local/bin/gfortran"
+
+export NETCDF
+export FC
+export F90
+export WRFIO_NCD_LARGE_FILE_SUPPORT
+
+
+# CANOPY SPECIFIC PATHS AND EXPORTS
+# this is for spyder (throws an error without this)
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
+
+# TEXT EDITOR
+export EDITOR=/Applications/TextMate.app/Contents/MacOS/TextMate
+
+
+

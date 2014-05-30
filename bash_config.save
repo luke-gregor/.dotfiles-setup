@@ -1,0 +1,30 @@
+#!/bin/bash
+
+
+
+export VISUAL='mvim -f'   # Make MacVim the visual editor
+export EDITOR="vim"   # Make vim the default editor
+
+
+# BASH COLORS
+# LSCOLORS order: DIR, SYM_LINK, SOCKET, PIPE, EXE, BLOCK_SP
+# CHAR_SP, EXE_SUID, EXE_GUID, DIR_STICKY, DIR_WO_STICKY
+# a = black, b = red, c = green, d = brown, e = blue,
+# f = magenta g = cyan, h = light gray, x = default
+# lowercase is bold
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+MKL_NUM_THREADS=1
+export MKL_NUM_THREADS
+
+source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
+
+SSHAGENT=/usr/bin/ssh-agent
+SSHAGENTARGS="-s"
+if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
+	  eval `$SSHAGENT $SSHAGENTARGS`
+	    trap "kill $SSH_AGENT_PID" 0
+fi
+
+#export GIT_EXTERNAL_DIFF=/Users/asoto/bin/gitdfdiff.sh
