@@ -20,3 +20,5 @@ alias ncview='ncview -no_auto_overlay'
 alias TextMate='/./Applications/TextMate.app/Contents/MacOS/TextMate'
 alias ipython='ipython2 --pylab'
 alias ipynote='ipython2 notebook --pylab --notebook-dir=/Users/luke/'
+
+alias ipy=ipython
