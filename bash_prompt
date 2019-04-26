@@ -3,7 +3,7 @@
 # bash_prompt
 # http://bashrcgenerator.com
 if [[ $HOSTNAME == eu-login* ]];
-  then HN='euler'
+  then HN='euler-login'
 elif [[ $HOSTNAME == staff-net-cx* ]];
   then HN='ethz-local'
 elif [[ $HOSTNAME == staff-net-vpn* ]];
