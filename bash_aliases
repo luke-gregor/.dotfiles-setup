@@ -16,9 +16,4 @@ alias lh='ls -ld .*'
 alias ssh='ssh -X'
 
 # Application aliases
-alias ncview='ncview -no_auto_overlay'
-alias TextMate='/./Applications/TextMate.app/Contents/MacOS/TextMate'
-alias ipython='ipython2 --pylab'
-alias ipynote='ipython2 notebook --pylab --notebook-dir=/Users/luke/'
-
-alias ipy=ipython
+alias jn='jupyter-notebook'
