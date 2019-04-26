@@ -3,8 +3,8 @@
 export VISUAL='mvim -f'   # Make MacVim the visual editor
 export EDITOR="vim"   # Make vim the default editor
 
-export LANG="en_US.utf8"
-export LC_ALL="en_US.utf8"
+export LANG=en_US.utf-8
+export LC_ALL=en_US.utf-8
 
 # BASH COLORS
 # LSCOLORS order: DIR, SYM_LINK, SOCKET, PIPE, EXE, BLOCK_SP
