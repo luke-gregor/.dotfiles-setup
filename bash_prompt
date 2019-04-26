@@ -4,8 +4,10 @@
 # http://bashrcgenerator.com
 if [[ $HOSTNAME == eu-login* ]];
   then HN='euler'
-elif [[ $HOSTNAME == staff-net* ]];
-  then HN='eth-net'
+elif [[ $HOSTNAME == staff-net-cx* ]];
+  then HN='ethz-local'
+elif [[ $HOSTNAME == staff-net-vpn* ]];
+  then HN='ethz-vpn'
 else
   HN=$HOSTNAME
 fi
