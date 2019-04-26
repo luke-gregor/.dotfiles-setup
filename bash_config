@@ -16,8 +16,6 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 MKL_NUM_THREADS=1
 export MKL_NUM_THREADS
 
-source `brew --prefix`/Library/Contributions/brew_bash_completion.sh
-
 SSHAGENT=/usr/bin/ssh-agent
 SSHAGENTARGS="-s"
 if [ -z "$SSH_AUTH_SOCK" -a -x "$SSHAGENT" ]; then
