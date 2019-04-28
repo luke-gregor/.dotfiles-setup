@@ -5,9 +5,9 @@
 if [[ $HOSTNAME == eu-login* ]];
   then HN='euler-login'
 elif [[ $HOSTNAME == staff-net-cx* ]];
-  then HN='ethz-local'
+  then HN='ethz.local'
 elif [[ $HOSTNAME == staff-net-vpn* ]];
-  then HN='ethz-vpn'
+  then HN='ethz.vpn'
 else
   HN=$HOSTNAME
 fi

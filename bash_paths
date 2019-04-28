@@ -1,6 +1,6 @@
 # bash_paths
 
-PATH=/usr/local/sbin
+PATH=$PATH:/usr/local/sbin
 PATH=$PATH:/usr/local/bin
 PATH=$PATH:/usr/sbin
 PATH=$PATH:/usr/bin
