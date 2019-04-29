@@ -1,9 +1,4 @@
 # bash_paths
 
-PATH=$PATH:/usr/local/sbin
-PATH=$PATH:/usr/local/bin
-PATH=$PATH:/usr/sbin
-PATH=$PATH:/usr/bin
-PATH=$PATH:/sbin
-PATH=$PATH:/bin
+PATH=$PATH:/Users/luke/Work/ETH-PD/Wiki/Scripts
 export PATH
