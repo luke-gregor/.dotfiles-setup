@@ -11,7 +11,7 @@ alias la='ls -Al'               # show hidden files\
 alias lt='ls -ltrh '              # sort by date\
 alias lm='ls -al | less'         # pipe through 'less'\
 alias lh='ls -ld .*'
-alias lg='la -Flh | grep --color=never gregorl'
+alias lg='la -Flh | grep gregorl'
 
 # turn on xhost for ssh sessions
 alias ssh='ssh -X'
