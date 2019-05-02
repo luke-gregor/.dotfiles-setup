@@ -5,12 +5,12 @@
 # Directory related aliases
 alias dir='ls -s'
 alias lss='ls -Fs'
-alias l='ls -CF --group-directories-first'
-alias ll='ls -Flh --group-directories-first'
-alias la='ls -Al --group-directories-first'  # show hidden files\
-alias lt='ls -ltrh '              # sort by date\
-alias lm='ls -al | less'         # pipe through 'less'\
-alias lh='ls -ld .* --group-directories-first'
+alias l='ls -CF --group-directories-first --color=always'
+alias ll='ls -Flh --group-directories-first --color=always'
+alias la='ls -Al --group-directories-first --color=always'  # show hidden files\
+alias lt='ls -ltrh '  # sort by date\
+alias lm='ls -Fahl --color=always --group-directories-first | less -R'         # pipe through 'less'\
+alias lh='ls -ld .* --group-directories-first  --color=always'
 alias lg='la -Flh | grep gregorl'
 
 # turn on xhost for ssh sessions
