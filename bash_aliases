@@ -2,16 +2,23 @@
 
 ##### BASH_ALIASES ######
 
+
 # Directory related aliases
 alias dir='ls -s'
 alias lss='ls -Fs'
-alias l='ls -CF --group-directories-first --color=always'
-alias ll='ls -Flh --group-directories-first --color=always'
-alias la='ls -Al --group-directories-first --color=always'  # show hidden files\
-alias lt='ls -ltrh '  # sort by date\
-alias lm='ls -Fahl --color=always --group-directories-first | less -R'         # pipe through 'less'\
-alias lh='ls -ld .* --group-directories-first  --color=always'
-alias lg='la -Flh | grep gregorl'
+
+if uname -a | grep -iq darwin; then
+	ARGS=""
+else
+	ARGS="--group-directories-first --color=always"
+fi
+alias l="ls -CF $ARGS"
+alias ll="ls -Flh $ARGS"
+alias la="ls -Al $ARGS"  # show hidden files\
+alias lt="ls -ltrh $ARGS"  # sort by date\
+alias lm="ls -Fahl | less -R"         # pipe through 'less'\
+alias lh="ls -ld .* "
+alias lg="la -Flh | grep gregorl"
 
 # turn on xhost for ssh sessions
 alias ssh='ssh -X'
