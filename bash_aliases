@@ -21,10 +21,15 @@ alias lh="ls -ld .* "
 alias lg="la -Flh | grep gregorl"
 
 # turn on xhost for ssh sessions
-alias ssh='ssh -X'
-alias ssh-euler='ssh -X gregorl@euler.ethz.ch'
+alias ssh-lengau="ssh lgregor@lengau.chpc.ac.za"
+alias ssh-chpc="ssh lgregor@scp.chpc.ac.za"
+alias ssh-euler='ssh gregorl@euler.ethz.ch'
 alias ssh-larix='ssh-workstation gregorl larix.ethz.ch'
 
 # Application aliases
 alias jn='jupyter-notebook'
-alias jupyter-euler="jupyter-remote gregorl"
+alias jupyter-euler="jupyter-remote_v1.0.3 gregorl"
+
+# Euler
+alias bjobs="ssh-euler bjobs"
+alias bkill="ssh-euler bkill"

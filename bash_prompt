@@ -5,12 +5,15 @@
 if [[ $HOSTNAME == eu-login* ]];
   then HN='euler.ethz'
 elif [[ $HOSTNAME == staff-net-cx* ]];
-  then HN='laptop.ethz'
+  then HN='wifi.ethz'
+elif [[ $HOSTNAME == guests-wired-cx* ]];
+  then HN='lan.ethz'
 elif [[ $HOSTNAME == staff-net-vpn* ]];
   then HN='vpn.ethz'
+elif [[ $HOSTNAME == login2 ]];
+  then HN='lengau.chpc'
 else
   HN=$HOSTNAME
 fi
 
 export PS1="\[\033[38;5;10m\]\u\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;15m\]@\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;11m\]$HN\[$(tput bold)\]\[$(tput sgr0)\]\[\033[38;5;15m\]:\[$(tput sgr0)\]\[$(tput sgr0)\]\[\033[38;5;9m\]\w\[$(tput sgr0)\]\[\033[38;5;15m\] \\$\[$(tput sgr0)\] "
-	
