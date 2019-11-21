@@ -25,6 +25,8 @@ alias ssh-lengau="ssh lgregor@lengau.chpc.ac.za"
 alias ssh-chpc="ssh lgregor@scp.chpc.ac.za"
 alias ssh-euler='ssh gregorl@euler.ethz.ch'
 alias ssh-larix='ssh-workstation gregorl larix.ethz.ch'
+alias ssh-cedrus='ssh-workstation gregorl cedrus.ethz.ch'
+alias ssh-bellis='ssh-workstation gregorl bellis.ethz.ch'
 
 # Application aliases
 alias jn='jupyter-notebook'

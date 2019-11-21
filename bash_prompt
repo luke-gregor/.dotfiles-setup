@@ -8,6 +8,8 @@ elif [[ $HOSTNAME == staff-net-cx* ]];
   then HN='wifi.ethz'
 elif [[ $HOSTNAME == guests-wired-cx* ]];
   then HN='lan.ethz'
+elif [[ $HOSTNAME == usys-cx* ]];
+  then HN='usys.ethz'
 elif [[ $HOSTNAME == staff-net-vpn* ]];
   then HN='vpn.ethz'
 elif [[ $HOSTNAME == login2 ]];
